@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "mixin": [
+    "cenchants.mixins.json",
+    "cenchants-common.mixins.json"
+  ],
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "cenchants",
+    "version": "${version}",
+    "name": "Combat Enchantments",
+    "description": "This is an example description! Tell everyone what your mod is about!",
+    "authors": ["Me!"],
+    "contact": {
+      "sources": "https://github.com/dsfhdshdjtsb"
+    },
+    "license": "MIT",
+    "icon": "assets/cenchants/icon.png",
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "environment": "*",
+    "entrypoints": {
+      "init": [
+        "com.cenchants.quilt.ExampleModQuilt"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.19.4"
+      },
+      {
+        "id": "architectury",
+        "version": ">=8.1.79"
+      }
+    ]
+  }
+}

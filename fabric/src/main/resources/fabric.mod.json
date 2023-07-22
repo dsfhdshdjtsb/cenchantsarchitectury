@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "cenchants",
+  "version": "${version}",
+  "name": "Combat Enchantments",
+  "description": "Adds various combat focused enchantments to the game",
+  "authors": [
+    "dsfhdshdjtsb"
+  ],
+  "contact": {
+    "homepage": "https://github.com/dsfhdshdjtsb",
+    "sources": "https://github.com/dsfhdshdjtsb"
+  },
+  "license": "MIT",
+  "icon": "assets/cenchants/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.cenchants.fabric.ExampleModFabric"
+    ]
+  },
+  "mixins": [
+    "cenchants.mixins.json",
+    "cenchants-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.19.4",
+    "architectury": ">=8.1.79"
+  }
+}
